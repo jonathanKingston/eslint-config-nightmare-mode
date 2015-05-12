@@ -1,21 +1,29 @@
 {
-  "name": "eslint-config-nightmare-config",
-  "version": "0.0.1",
+  "name": "eslint-config-nightmare-mode",
+  "version": "0.0.2",
   "description": "Strictest settings for ESLint",
   "main": "index.js",
   "scripts": {
-    "test": "mocha tests/index.js"
+    "test": "npm run build; mocha tests/index.js",
+    "build": "node build.js"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/jonathanKingston/eslint-config-nightmare-config.git"
+    "url": "git+https://github.com/jonathanKingston/eslint-config-nightmare-mode.git"
   },
   "keywords": [
     "eslint",
     "eslintconfig"
   ],
+  "bugs": {
+    "url": "https://github.com/jonathanKingston/eslint-config-nightmare-mode/issues"
+  },
+  "homepage": "https://github.com/jonathanKingston/eslint-config-nightmare-mode#readme",
   "author": "Jonathan Kingston",
   "license": "MIT",
+  "dependencies": {
+    "object-assign": "^2.0.0"
+  },
   "devDependencies": {
     "chai": "^2.3.0",
     "eslint": "^0.21.0",
