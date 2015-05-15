@@ -2,11 +2,23 @@
 
 This config is designed to have everything enabled but still be as close to 'normal' JavaScript development as possible whist also being very paranoid and excessive to most developers.
 
+The intent is to expand this set of rules where possible to keep as strict as possible. When using this should allow authors to disable rules only rather than having to enable and disable.
+
 ## Install and setup
 
 * npm install -g eslint-config-nightmare-mode
 * Add `extends: "nightmare-mode"` to your `.eslintrc`
 * Spend a long time fixing bugs
+
+## Alternative setups
+
+For other flavours of nightmare-mode try using:
+
+### Node
+`extends: "nightmare-mode/node"`
+
+### Browser
+`extends: "nightmare-mode/browser"`
 
 ## Licence
 
