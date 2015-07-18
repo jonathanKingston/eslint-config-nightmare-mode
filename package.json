@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-nightmare-mode",
-  "version": "0.0.3",
+  "version": "0.1.0",
   "description": "Strictest settings for ESLint",
   "main": "index.js",
   "scripts": {
