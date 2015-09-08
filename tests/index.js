@@ -18,9 +18,10 @@ describe('eslint-config-nightmare-mode', function () {
     result.results.forEach(function (fileCheck) {
       var filePath = fileCheck.filePath.replace(/\/in\//, '/out/');
       var fileContents = fs.readFileSync(filePath, {encoding: 'utf8'});
-      var serialisedContent = JSON.stringify(fileCheck.messages);
+      var serialisedContent = JSON.stringify(fileCheck.messages, null, '  ');
 
       assert.equal(fileContents.trim(), serialisedContent.trim());
+      assert.equal(JSON.parse(fileContents.trim()).length, JSON.parse(serialisedContent.trim()).length);
     });
   });
 });
