@@ -1,3 +1,7 @@
+# 0.3.0
+- "indent" make indent uniform with 2 char space
+- "no-var" enable to force let and const instead of var
+
 # 0.2.1
 - Update to eslint@1.4.1 and added latest rules
 

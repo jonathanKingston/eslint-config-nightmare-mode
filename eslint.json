@@ -77,7 +77,10 @@
     "id-match": 0,
     "indent": [
       2,
-      2
+      2,
+      {
+        "SwitchCase": 2
+      }
     ],
     "init-declarations": 0,
     "jsx-quotes": 0,
@@ -239,7 +242,7 @@
     "no-use-before-define": 2,
     "no-useless-call": 2,
     "no-dupe-class-members": 2,
-    "no-var": 0,
+    "no-var": 2,
     "no-void": 2,
     "no-warning-comments": [
       2,
