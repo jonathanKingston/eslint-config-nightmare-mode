@@ -70,6 +70,7 @@
       "declaration"
     ],
     "generator-star-spacing": 0,
+    "global-require": 2,
     "guard-for-in": 2,
     "handle-callback-err": 0,
     "id-length": 0,
@@ -79,6 +80,7 @@
       2
     ],
     "init-declarations": 0,
+    "jsx-quotes": 0,
     "key-spacing": [
       2,
       {
@@ -205,6 +207,7 @@
     "no-regex-spaces": 2,
     "no-reserved-keys": 0,
     "no-restricted-modules": 0,
+    "no-restricted-syntax": [2, "FunctionExpression", "WithStatement"],
     "no-return-assign": 2,
     "no-script-url": 2,
     "no-self-compare": 2,
@@ -279,6 +282,7 @@
       "single"
     ],
     "radix": 2,
+    "require-jsdoc": 0,
     "require-yield": 2,
     "semi": 2,
     "semi-spacing": [
@@ -304,6 +308,7 @@
         "named": "never"
       }
     ],
+    "space-before-keywords": [2, "always"],
     "space-in-parens": [
       2,
       "never"
