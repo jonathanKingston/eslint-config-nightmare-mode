@@ -17,6 +17,7 @@
       2,
       "never"
     ],
+    "arrow-body-style": [2, "always"],
     "arrow-parens": [2, "as-needed"],
     "arrow-spacing": [2, { "before": false, "after": true }],
     "block-scoped-var": 2,
@@ -122,8 +123,10 @@
     "newline-after-var": 2,
     "no-alert": 2,
     "no-array-constructor": 2,
+    "no-arrow-condition": 2,
     "no-bitwise": 2,
     "no-caller": 2,
+    "no-case-declarations": 2,
     "no-catch-shadow": 2,
     "no-class-assign": 2,
     "no-cond-assign": 2,
@@ -173,6 +176,7 @@
     "no-lone-blocks": 2,
     "no-lonely-if": 2,
     "no-loop-func": 2,
+    "no-magic-numbers": 2,
     "no-mixed-requires": [
       2,
       false
@@ -190,6 +194,7 @@
       }
     ],
     "no-native-reassign": 2,
+    "no-negated-condition": 2,
     "no-negated-in-lhs": 2,
     "no-nested-ternary": 2,
     "no-new": 2,

@@ -1,10 +1,10 @@
 {
   "name": "eslint-config-nightmare-mode",
-  "version": "0.3.0",
+  "version": "1.0.0",
   "description": "Strictest settings for ESLint",
   "main": "index.js",
   "scripts": {
-    "test": "npm run build; mocha tests/index.js",
+    "test": "npm run build && ava test/**/*.js",
     "build": "node build.js"
   },
   "repository": {
@@ -25,8 +25,10 @@
     "object-assign": "^2.0.0"
   },
   "devDependencies": {
+    "ava": "^0.10.0",
+    "babel-register": "^6.4.3",
     "chai": "^2.3.0",
-    "eslint": "^1.4.1",
-    "mocha": "^2.2.4"
+    "eslint": "^1.7.3",
+    "eslint-code-review": "0.0.1"
   }
 }
