@@ -22,8 +22,9 @@ test('length check', (t) => {
   `;
   const messages = new CodeChecker(code, config);
 
-  t.is(messages.length, 3);
+  t.is(messages.length, 4);
   t.ok(messages.ruleMatch('max-len'));
+  t.ok(messages.ruleMatch('eol-last'));
   t.ok(messages.ruleMatch('no-var'));
   t.ok(messages.ruleMatch('no-unused-vars'));
 });
@@ -35,6 +36,7 @@ test('magic-numbers', (t) => {
     export default function me2(x) {
       return me * x * 80;
     }
+
   `;
   const messages = new CodeChecker(code, config);
 
