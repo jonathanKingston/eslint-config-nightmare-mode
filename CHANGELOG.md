@@ -1,3 +1,7 @@
+# 2.3.0
+- Setting newline-before-return to error
+- Setting no-restricted-globals to 0
+
 # 2.2.0
 - updated rules to enable eslint@2.2.0
 
