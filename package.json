@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-nightmare-mode",
-  "version": "2.2.0",
+  "version": "2.3.0",
   "description": "Strictest settings for ESLint",
   "main": "index.js",
   "scripts": {
@@ -28,7 +28,7 @@
     "ava": "^0.10.0",
     "babel-register": "^6.4.3",
     "chai": "^2.3.0",
-    "eslint": "^2.2.0",
+    "eslint": "^2.3.0",
     "eslint-code-review": "0.1.1"
   }
 }
