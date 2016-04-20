@@ -83,7 +83,7 @@
       2,
       2,
       {
-        "SwitchCase": 2
+        "SwitchCase": 1
       }
     ],
     "init-declarations": 0,
@@ -183,7 +183,13 @@
     "no-lone-blocks": 2,
     "no-lonely-if": 2,
     "no-loop-func": 2,
-    "no-magic-numbers": 2,
+    "no-magic-numbers": [
+      2,
+      {
+        "detectObjects": true,
+        "enforceConst": true
+      }
+    ],
     "no-mixed-requires": [
       2,
       false
@@ -225,7 +231,7 @@
     "no-restricted-globals": 0,
     "no-restricted-imports": 0,
     "no-restricted-modules": 0,
-    "no-restricted-syntax": [2, "FunctionExpression", "WithStatement"],
+    "no-restricted-syntax": [2, "LabeledStatement", "WithStatement"],
     "no-return-assign": 2,
     "no-script-url": 2,
     "no-self-assign": 2,

@@ -30,6 +30,27 @@ test('length check', (t) => {
   t.ok(messages.ruleMatch('no-unused-vars'));
 });
 
+test('Sample code check', (t) => {
+  const code = `
+    const meow = 12;
+    const isACat = 12;
+
+    switch (meow) {
+      case isACat:
+        console.log('probs a cat');
+        break;
+      default:
+        console.log('probs not a cat');
+    }
+
+  `;
+  const messages = new CodeChecker(code, config);
+
+  t.is(messages.length, 4);
+  t.ok(messages.ruleMatch('no-console'));
+  t.ok(messages.ruleMatch('no-undef'));
+});
+
 test('magic-numbers', (t) => {
   const code = `
     const me = 12;
