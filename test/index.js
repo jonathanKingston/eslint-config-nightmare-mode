@@ -65,3 +65,40 @@ test('magic-numbers', (t) => {
   t.is(messages.length, 1);
   t.ok(messages.ruleMatch('no-magic-numbers'));
 });
+
+test('one-var', (t) => {
+  const code = `
+    let a, b, c;
+    const me = 12;
+
+    a = '@@@';
+    b = '~~~~';
+    c = me;
+    a++;
+    b++;
+    c++;
+
+    console.log(\`a \${a} b: \${b} c: \${c}\`);
+
+  `;
+  const messages = new CodeChecker(code, config);
+
+  t.is(messages.length, 2);
+  t.ok(messages.ruleMatch('no-console'));
+  t.ok(messages.ruleMatch('no-undef'));
+
+
+  const code2 = `
+    let a, b, c = 'aaa';
+
+    console.log(\`a \${a} b: \${b} c: \${c}\`);
+
+  `;
+  const messages2 = new CodeChecker(code2, config);
+
+  t.is(messages2.length, 4);
+  t.ok(messages2.ruleMatch('one-var'));
+  t.ok(messages2.ruleMatch('prefer-const'));
+  t.ok(messages2.ruleMatch('no-console'));
+  t.ok(messages2.ruleMatch('no-undef'));
+});
