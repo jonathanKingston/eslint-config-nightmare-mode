@@ -28,7 +28,7 @@
     "ava": "^0.10.0",
     "babel-register": "^6.4.3",
     "chai": "^2.3.0",
-    "eslint": "^2.3.0",
+    "eslint": "^6.6.0",
     "eslint-code-review": "0.1.1"
   }
 }
